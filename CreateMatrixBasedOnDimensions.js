@@ -115,7 +115,7 @@ includeMaximizingFunction(noOfVariables)
 
 
 async function GetFromBackend(matrix){
-    const response = await fetch(`http://127.0.0.1:5000/calculateSimplex/${matrix}`)
+    const response = await fetch(`https://simplex-backend.herokuapp.com/calculateSimplex/${matrix}`)
     const data = await response.json()
 
     return data
